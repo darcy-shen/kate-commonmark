@@ -87,17 +87,41 @@
         <RegExpr String="```" context="#pop" endRegion="fencedC++"/>
         <IncludeRules context="##C++"/>
       </context>
+      <context attribute="fencedGo" lineEndContext="#stay" name="fencedGo">
+        <RegExpr String="```" context="#pop" endRegion="fencedGo"/>
+        <IncludeRules context="##Go"/>
+      </context>
       <context attribute="fencedJava" lineEndContext="#stay" name="fencedJava">
         <RegExpr String="```" context="#pop" endRegion="fencedJava"/>
         <IncludeRules context="##Java"/>
+      </context>
+      <context attribute="fencedJavaScript" lineEndContext="#stay" name="fencedJavaScript">
+        <RegExpr String="```" context="#pop" endRegion="fencedJavaScript"/>
+        <IncludeRules context="##JavaScript"/>
+      </context>
+      <context attribute="fencedMySQL" lineEndContext="#stay" name="fencedMySQL">
+        <RegExpr String="```" context="#pop" endRegion="fencedMySQL"/>
+        <IncludeRules context="##SQL (MySQL)"/>
       </context>
       <context attribute="fencedPython" lineEndContext="#stay" name="fencedPython">
         <RegExpr String="```" context="#pop" endRegion="fencedPython"/>
         <IncludeRules context="##Python"/>
       </context>
+      <context attribute="fencedRuby" lineEndContext="#stay" name="fencedRuby">
+        <RegExpr String="```" context="#pop" endRegion="fencedRuby"/>
+        <IncludeRules context="##Ruby"/>
+      </context>
       <context attribute="fencedScala" lineEndContext="#stay" name="fencedScala">
         <RegExpr String="```" context="#pop" endRegion="fencedScala"/>
         <IncludeRules context="##Scala"/>
+      </context>
+      <context attribute="fencedScheme" lineEndContext="#stay" name="fencedScheme">
+        <RegExpr String="```" context="#pop" endRegion="fencedScheme"/>
+        <IncludeRules context="##Scheme"/>
+      </context>
+      <context attribute="fencedSQL" lineEndContext="#stay" name="fencedSQL">
+        <RegExpr String="```" context="#pop" endRegion="fencedSQL"/>
+        <IncludeRules context="##SQL"/>
       </context>
       <context attribute="fencedCode" lineEndContext="#stay" name="fencedCode">
         <RegExpr String="```" context="#pop" endRegion="fencedCode"/>
@@ -108,9 +132,15 @@
         <RegExpr context="fencedBash" String="``` bash" beginRegion="fencedBash"/>
         <RegExpr context="fencedC" String="``` c" beginRegion="fencedC"/>
         <RegExpr context="fencedC++" String="``` cpp" beginRegion="fencedC++"/>
+        <RegExpr context="fencedGo" String="``` go" beginRegion="fencedGo"/>
         <RegExpr context="fencedJava" String="``` java" beginRegion="fencedJava"/>
+        <RegExpr context="fencedJavaScript" String="``` js" beginRegion="fencedJavaScript"/>
+        <RegExpr context="fencedMySQL" String="``` mysql" beginRegion="fencedMySQL"/>
         <RegExpr context="fencedPython" String="``` py" beginRegion="fencedPython"/>
+        <RegExpr context="fencedRuby" String="``` rb" beginRegion="fencedRuby"/>
         <RegExpr context="fencedScala" String="``` scala" beginRegion="fencedScala"/>
+        <RegExpr context="fencedScheme" String="``` scheme" beginRegion="fencedScheme"/>
+        <RegExpr context="fencedSQL" String="``` sql" beginRegion="fencedSQL"/>
         <RegExpr context="fencedCode" String="```" beginRegion="fencedCode"/>
         <RegExpr attribute="reflink" String="&reflinkregex;"/>
         <RegExpr attribute="footnote" String="&footnoteregex;"/>

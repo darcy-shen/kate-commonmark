@@ -6,9 +6,15 @@ A list of fenced code language support
 Bash
 C
 C++
+Go
 Java
+JavaScript
+MySQL
 Python
+Ruby
 Scala
+Scheme
+SQL
 ```
 
 ## Install
