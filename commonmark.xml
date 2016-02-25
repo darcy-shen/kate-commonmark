@@ -126,6 +126,10 @@
       <context attribute="fencedCode" lineEndContext="#stay" name="fencedCode">
         <RegExpr String="```" context="#pop" endRegion="fencedCode"/>
       </context>
+      <context attribute="mathRegion" lineEndContext="#stay" name="mathRegion">
+        <RegExpr String="\$\$" context="#pop" endRegion="mathRegion"/>
+        <IncludeRules context="##LaTeX"/>
+      </context>
       <context attribute="common" name="inc" lineEndContext="#stay">
         <RegExpr attribute="code" String="`[^`]+`"/>
         <RegExpr context="comment" String="&lt;!--" beginRegion="comment"/>
@@ -142,6 +146,7 @@
         <RegExpr context="fencedScheme" String="``` scheme" beginRegion="fencedScheme"/>
         <RegExpr context="fencedSQL" String="``` sql" beginRegion="fencedSQL"/>
         <RegExpr context="fencedCode" String="```" beginRegion="fencedCode"/>
+        <RegExpr context="mathRegion" String="\$\$" beginRegion="mathRegion"/>
         <RegExpr attribute="reflink" String="&reflinkregex;"/>
         <RegExpr attribute="footnote" String="&footnoteregex;"/>
         <RegExpr attribute="inlinelink" String="&inlinelinkregex;"/>
