@@ -36,7 +36,7 @@
 <!ENTITY strikeoutregex "[~]{2}[^~].*[^~][~]{2}">
 <!-- pandoc style -->
 ]>
-<language name="CommonMark" version="0.1" kateversion="15.08" section="Markup" extensions="*.cm" priority="15" author="Darcy Shen" license="BSD">
+<language name="CommonMark" version="0.1" kateversion="5.0" section="Markup" extensions="*.cm" priority="15" author="Darcy Shen" license="BSD">
   <highlighting>
     <contexts>
       <context attribute="Normal Text" lineEndContext="#stay" name="Normal Text">

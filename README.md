@@ -18,4 +18,6 @@ SQL
 ```
 
 ## Install
-Just put the file in the syntax file directory. For example `/usr/share/katepart5/syntax`.
+Just put the file in the syntax file directory.
+
+For GNU/Linux, this directory is `$HOME/.local/share/org.kde.syntax-highlighting/syntax`, and for MacOS, it is `$HOME/Library/Application Support/org.kde.syntax-highlighting/syntax`.
